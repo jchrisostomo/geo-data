@@ -1,0 +1,20 @@
+[project]
+name = "geo-data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "João Chrisóstomo", email = "joao.chrisostomo@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "pyproj>=3.7.2",
+    "shapely>=2.2.0",
+]
+
+[project.scripts]
+geo-data = "geo_data:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
