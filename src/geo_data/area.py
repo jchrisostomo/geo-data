@@ -30,6 +30,8 @@ class Area:
         if self.area_km2 <= 0:
             self.area_km2 = 1
             raise ValueError("Area must be greater then zero.")
+        if self.area_km2 > 1000:
+            raise ValueError("Area must not be greater than 1000 km².")
 
         
         utm_zone = min(60, max(1, int((self.longitude + 180) // 6) + 1))

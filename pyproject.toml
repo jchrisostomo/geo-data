@@ -1,14 +1,20 @@
 [project]
 name = "geo-data"
 version = "0.1.0"
-description = "Add your description here"
+description = "Downloads and clips geospatial data for a square area of interest."
 readme = "README.md"
 authors = [
     { name = "João Chrisóstomo", email = "joao.chrisostomo@gmail.com" }
 ]
 requires-python = ">=3.11"
+license = "GPL-3.0-only"
 dependencies = [
+    "geopandas>=1.0",
+    "numpy>=2.0",
+    "overturemaps[geopandas]",
     "pyproj>=3.7.2",
+    "rasterio>=1.4",
+    "requests>=2.32",
     "shapely>=2.2.0",
 ]
 
